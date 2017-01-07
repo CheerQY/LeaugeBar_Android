@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="G:\Android\LeaugeBar\IMLib\src\main\assets"/><source path="G:\Android\LeaugeBar\IMLib\build\generated\assets\shaders\release"/></dataSet><dataSet config="release"><source path="G:\Android\LeaugeBar\IMLib\src\release\assets"/></dataSet></merger>

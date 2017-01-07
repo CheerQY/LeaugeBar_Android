@@ -8,7 +8,7 @@ import android.util.AttributeSet;
 import android.util.DisplayMetrics;
 import android.view.WindowManager;
 
-import com.sctf.mobile.generalmodule.R;
+import com.sicnu.cheer.generalmodule.R;
 import com.sicnu.cheer.generalmodule.util.ImageUtils;
 
 import java.io.File;

@@ -12,7 +12,7 @@ import android.widget.LinearLayout;
 import android.widget.TimePicker;
 import android.widget.TimePicker.OnTimeChangedListener;
 
-import com.sctf.mobile.generalmodule.R;
+import com.sicnu.cheer.generalmodule.R;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;

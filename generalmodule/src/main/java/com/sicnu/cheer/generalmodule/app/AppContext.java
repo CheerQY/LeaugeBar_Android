@@ -10,7 +10,7 @@ import android.net.wifi.WifiManager;
 import android.telephony.TelephonyManager;
 import android.util.Log;
 
-import com.sctf.mobile.generalmodule.R;
+import com.sicnu.cheer.generalmodule.R;
 import com.sicnu.cheer.generalmodule.bean.YKTMenus;
 import com.sicnu.cheer.generalmodule.util.SharedPreferencesUtil;
 import com.sicnu.cheer.generalmodule.util.StringUtils;

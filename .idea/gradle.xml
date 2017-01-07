@@ -9,7 +9,13 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/IM" />
+            <option value="$PROJECT_DIR$/IMKit" />
+            <option value="$PROJECT_DIR$/IMLib" />
+            <option value="$PROJECT_DIR$/XListView" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/generalmodule" />
+            <option value="$PROJECT_DIR$/libqrcode" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

@@ -7,7 +7,7 @@ import android.view.View;
 import android.webkit.WebViewClient;
 import android.widget.TextView;
 
-import com.sctf.mobile.generalmodule.R;
+import com.sicnu.cheer.generalmodule.R;
 import com.sicnu.cheer.generalmodule.widget.WebView;
 
 /**

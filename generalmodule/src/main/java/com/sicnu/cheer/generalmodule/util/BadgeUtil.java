@@ -8,7 +8,7 @@ import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.os.Build;
 
-import com.sctf.mobile.generalmodule.R;
+import com.sicnu.cheer.generalmodule.R;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;

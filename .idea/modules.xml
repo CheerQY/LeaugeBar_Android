@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/IM/IM.iml" filepath="$PROJECT_DIR$/IM/IM.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IMKit/IMKit.iml" filepath="$PROJECT_DIR$/IMKit/IMKit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IMLib/IMLib.iml" filepath="$PROJECT_DIR$/IMLib/IMLib.iml" />
       <module fileurl="file://$PROJECT_DIR$/LeaugeBar.iml" filepath="$PROJECT_DIR$/LeaugeBar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/XListView/XListView.iml" filepath="$PROJECT_DIR$/XListView/XListView.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/generalmodule/generalmodule.iml" filepath="$PROJECT_DIR$/generalmodule/generalmodule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libqrcode/libqrcode.iml" filepath="$PROJECT_DIR$/libqrcode/libqrcode.iml" />
     </modules>
   </component>
 </project>

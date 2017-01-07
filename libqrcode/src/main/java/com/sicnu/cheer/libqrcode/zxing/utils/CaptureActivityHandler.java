@@ -23,7 +23,7 @@ import android.os.Handler;
 import android.os.Message;
 
 import com.google.zxing.Result;
-import com.sctf.mobile.libqrcode.R;
+import com.sicnu.cheer.libqrcode.zxing.R;
 import com.sicnu.cheer.libqrcode.zxing.activity.CaptureActivity;
 import com.sicnu.cheer.libqrcode.zxing.camera.CameraManager;
 import com.sicnu.cheer.libqrcode.zxing.decode.DecodeThread;

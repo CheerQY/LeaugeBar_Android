@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="G:\Android\LeaugeBar\IMKit\src\main\libs"><file name="Rong_IMKit.jar" path="G:\Android\LeaugeBar\IMKit\src\main\libs\Rong_IMKit.jar"/></source></dataSet><dataSet config="release"><source path="G:\Android\LeaugeBar\IMKit\src\release\jniLibs"/></dataSet></merger>

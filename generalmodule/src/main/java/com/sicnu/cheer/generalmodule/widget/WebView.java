@@ -26,7 +26,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.TimePicker;
 
-import com.sctf.mobile.generalmodule.R;
+import com.sicnu.cheer.generalmodule.R;
 import com.sicnu.cheer.generalmodule.bean.YKTUser;
 import com.sicnu.cheer.generalmodule.util.SharedPreferencesUtil;
 import com.sicnu.cheer.generalmodule.util.UIHelper;

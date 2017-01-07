@@ -2,7 +2,7 @@ package com.sicnu.cheer.generalmodule.util;
 
 import android.content.Context;
 
-import com.sctf.mobile.generalmodule.R;
+import com.sicnu.cheer.generalmodule.R;
 
 /**
  * url管理工具类

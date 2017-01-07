@@ -26,8 +26,7 @@ import android.os.Vibrator;
 import android.preference.PreferenceManager;
 import android.util.Log;
 
-
-import com.sctf.mobile.libqrcode.R;
+import com.sicnu.cheer.libqrcode.zxing.R;
 import com.sicnu.cheer.libqrcode.zxing.activity.CaptureActivity;
 
 import java.io.Closeable;
