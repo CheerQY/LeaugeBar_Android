@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false" >
+        <layer-list>
+            <!-- 边框颜色值 -->
+            <item>
+                <shape>
+                    <solid  android:color="@color/white" />
+                    <corners android:topLeftRadius="5dp" android:bottomLeftRadius="5dp" android:bottomRightRadius="0.1dp" android:topRightRadius="0.1dp"></corners>
+                </shape>
+            </item>
+            <!-- 主体背景颜色值 -->
+            <item android:top="1dp" android:left="1dp" android:bottom="1dp">
+                <shape >
+                    <solid android:color="@color/white" />
+                     <corners android:topLeftRadius="5dp" android:bottomLeftRadius="5dp" android:bottomRightRadius="0.1dp" android:topRightRadius="0.1dp"></corners>
+                </shape>
+
+            </item>
+        </layer-list>
+
+    </item>
+    <item android:state_enabled="true">
+        <layer-list>
+            <!-- 边框颜色值 -->
+            <item>
+                <shape>
+                    <solid android:color="@color/white" />
+                    <corners android:topLeftRadius="5dp" android:bottomLeftRadius="5dp" android:bottomRightRadius="0.1dp" android:topRightRadius="0.1dp"></corners>
+                </shape>
+            </item>
+            <!-- 主体背景颜色值 -->
+            <item android:top="1dp" android:left="1dp" android:bottom="1dp">
+                <shape >
+                    <solid android:color="@color/home_head_bg" />
+                    <corners android:topLeftRadius="5dp" android:bottomLeftRadius="5dp" android:bottomRightRadius="0.1dp" android:topRightRadius="0.1dp"></corners>
+                </shape>
+            </item>
+        </layer-list>
+
+    </item>
+    <item>
+        <layer-list>
+            <!-- 边框颜色值 -->
+            <item>
+                <shape>
+                    <solid android:color="@color/white" />
+                    <corners android:topLeftRadius="5dp" android:bottomLeftRadius="5dp" android:bottomRightRadius="0.1dp" android:topRightRadius="0.1dp"></corners>
+                </shape>
+            </item>
+            <!-- 主体背景颜色值 -->
+            <item android:top="1dp" android:left="1dp" android:bottom="1dp">
+                <shape>
+                    <solid android:color="@color/home_head_bg" />
+                    <corners android:topLeftRadius="5dp" android:bottomLeftRadius="5dp" android:bottomRightRadius="0.1dp" android:topRightRadius="0.1dp"></corners>
+                </shape>
+            </item>
+        </layer-list>
+
+    </item>
+
+</selector>

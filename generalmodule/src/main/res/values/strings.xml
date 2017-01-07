@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">GeneralModule</string>
+    <!--common-->
+    <string name="ok">确定</string>
+    <string name="back">返回</string>
+    <string name="cancel">取消</string>
+    <string name="tip">提示</string>
+    <!-- 时间 -->
+    <string name="minutes_ago">分钟前</string>
+    <string name="hours_ago">小时前</string>
+    <string name="days_ago">天前</string>
+    <string name="yesterday">昨天</string>
+    <string name="the_day_before_yesterday">前天</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="hour">时</string>
+    <string name="minute">分</string>
+    <string name="second">秒</string>
+
+    <!-- 网络状态提示 -->
+    <string name="login_failure"> 登录失败</string>
+    <string name="msg_no_network">你设备的网络不可用，请检查网络！</string>
+
+    <string name="msg_con_timeout">连接超时,请稍后再试！</string>
+    <string name="msg_con_err">网络连接错误,请检查您设备的网络！</string>
+    <string name="msg_resq_timeout">请求超时,请稍后再试！</string>
+    <string name="msg_server_err">服务器错误</string>
+    <string name="data_analysis_error">数据解析异常</string>
+    <string name="loading_str">加载中...</string>
+    <string name="url_err">调用地址错误</string>
+    <string name="err_code">错误代码为</string>
+    <string name="exception">异常</string>
+    <string name="url_return_code_err">请求url返回状态码异常,状态码：</string>
+    <string name="url_protocol_or_returndata_error">请求url异常,可能是协议不对或者返回的内容有问题</string>
+    <string name="net_error">发生网络异常</string>
+    <string name="msg_resq_err">网络请求错误,请稍后再试!</string>
+    <string name="no_more_result_tip">没有更多记录了!</string>
+
+    <string name="network_not_connected">网络连接失败，请检查网络设置</string>
+    <string name="xml_parser_failed">数据解析异常</string>
+    <string name="io_exception_error">文件流异常</string>
+    <string name="http_status_code_error">网络异常，错误码：%d</string>
+    <string name="http_exception_error">网络异常，请求超时</string>
+    <string name="socket_exception_error">网络异常，读取数据超时</string>
+    <string name="app_run_code_error">应用程序运行时异常</string>
+
+    <!--暂无数据-->
+    <string name="no_result">暂无数据</string>
+    <string name="no_group">未分组</string>
+    <!--  update  -->
+    <string name="down_err_no_sdcard">无法下载安装文件，请检查SD卡是否挂载</string>
+    <string name="no_sdcard">内存卡不存在，请检查SD卡是否挂载</string>
+    <string name="version_update">版本更新：</string>
+    <string name="checking_wait">正在检测，请稍后...</string>
+    <string name="sys_tip">系统提示</string>
+    <string name="latest_version">您当前已经是最新版本</string>
+    <string name="get_update_info_error">无法获取版本更新信息</string>
+    <string name="downloading_new_version">正在下载新版本</string>
+    <string name="data_download_tip">当前使用的是手机流量，请谨慎下载！</string>
+    <string name="download_now">立即更新</string>
+    <string name="download_later">以后再说</string>
+</resources>

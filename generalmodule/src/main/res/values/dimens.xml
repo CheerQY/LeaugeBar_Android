@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!--申请模块普通字体大小-->
+    <dimen name="apply_add_tag">16sp</dimen>
+    <dimen name="apply_add_content">15sp</dimen>
+    <dimen name="apply_add_submit">24sp</dimen>
+    <dimen name="apply_add_head_title">22dp</dimen>
+    <dimen name="popmenu_item_height">42dp</dimen>
+    <dimen name="top_right_btn_size">30dp</dimen>
+    <!--顶部标题栏组件-->
+    <dimen name="common_head_height">55dp</dimen>
+    <dimen name="common_head_txt_size">20sp</dimen>
+    <dimen name="common_head_button_right_text_size">15sp</dimen>
+    <dimen name="common_head_button_right_text_padding">10dp</dimen>
+
+    <dimen name="marginTop">15dp</dimen>
+
+
+    <dimen name="input_txt_count_size">12sp</dimen>
+</resources>

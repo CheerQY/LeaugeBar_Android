@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:background="@color/home_head_bg">
+
+        <ImageButton
+            android:id="@id/back"
+            android:layout_width="40dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/return_white2x" />
+
+        <TextView
+            android:id="@id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="标题"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@id/title_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@id/title_tab_left"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:background="@drawable/choose_title_text_left_bg"
+                android:gravity="center"
+                android:text=" 待审批 "
+                android:textColor="@color/white"
+                android:textSize="14sp"
+
+                />
+
+            <Button
+                android:id="@id/title_tab_right"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:background="@drawable/choose_title_text_right_bg"
+                android:gravity="center"
+                android:text="已审批"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

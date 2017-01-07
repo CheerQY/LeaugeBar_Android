@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="white1">#F5F5F5</color>
+    <color name="black">#000000</color>
+    <color name="black1">#2E2E3A</color>
+    <color name="gray">#808080</color>
+    <color name="gray1">#E6E6E6</color>
+    <color name="gray2">#C2C2C2</color>
+    <color name="red">#FF0000</color>
+    <color name="gold">#FFD700</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="green">#008000</color>
+    <color name="register_green">#23893F</color>
+    <color name="blue">#0000FF</color>
+    <color name="purple">#800080</color>
+    <color name="pink">#FFC0CB</color>
+    <color name="orange">#FFA500</color>
+    <color name="send_code_orange">#F38D08</color>
+    <color name="lemonyellow">#FFFACD</color>
+    <color name="graywhite">#F5F5F5</color>
+    <color name="grayslate">#708090</color>
+    <color name="lightblue">#0083FF</color>
+    <color name="lightgray">#DCDCDC</color>
+    <color name="divider">#D5D5D5</color>
+    <color name="transparent">#0000</color>
+
+
+
+    <color name="home_bg">#F1F1F1</color>
+
+    <color name="home_head_bg">#00a76d</color>
+    <color name="home_foot_bg">#D8DADD</color>
+
+    <color name="full_transparent">#00000000</color>
+    <color name="half_transparent">#aa000000</color>
+    <!-- dialog -->
+    <color name="input_color_bg">#F1F1F1</color>
+    <color name="dialog_title_color">#555555</color>
+    <color name="dialog_input_color">#838383</color>
+    <!-- theme -->
+    <color name="theme_green_color">#00a76d</color>
+    <color name="theme_gray_color">#9F9F9F</color>
+    <color name="theme_alpha">#7F000000</color>
+
+    <!-- switch -->
+    <color name="switch_track_on">#55A4E8</color>
+    <color name="switch_track_off">#D3D3D3</color>
+    <color name="switch_thumb_on">#E5F3FF</color>
+    <color name="switch_thumb_off">#FFF</color>
+
+
+    <color name="gen_toptab_gray">#A6A6A6</color>
+    <color name="light_transparent">#55000000</color>
+    <color name="default_grey">#E6E6E6</color>
+    <color name="line_grey">#55cdcdcd</color>
+    <color name="secondary_text_grey">#999999</color>
+</resources>

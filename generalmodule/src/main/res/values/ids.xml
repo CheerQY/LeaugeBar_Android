@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 标题栏 -->
+    <item name="title_view" type="id" />
+    <item name="back" type="id" />
+    <item name="title" type="id" />
+    <item name="title_right_button" type="id" />
+    <item name="title_tab" type="id" />
+    <item name="title_tab_left" type="id" />
+    <item name="title_tab_right" type="id" />
+
+
+    <item name="custom" type="id" />
+    <item name="message" type="id" />
+    <item name="cancel" type="id" />
+    <item name="submit" type="id" />
+
+
+    <item name="share_qr_code" type="id" />
+    <item name="share_copy_link" type="id" />
+    <item name="share_cancel" type="id" />
+
+    <item name="fragment_content" type="id" />
+
+
+    <item name="webView" type="id" />
+
+</resources>

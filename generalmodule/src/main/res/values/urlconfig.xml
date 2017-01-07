@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--测试库ip-->
+    <string name="generalRoot">http://192.168.0.114</string>
+    <!--<string name="generalRoot">http://192.168.3.114</string>-->
+
+    <!-- 登录 -->
+    <string name="loginAction">/rest/sys/login</string>
+    <!-- 自动登录 -->
+    <string name="autoLoginAction">/rest/sys/autoLogin</string>
+    <!-- 退出账号 -->
+    <string name="logoutAction">/rest/sys/logout</string>
+    <!-- 更改用户信息 -->
+    <string name="changeUserInfoAction">/rest/restUserInfo/changeUserInfo</string>
+    <!-- 更改企业信息 -->
+    <string name="changeOrgInfoAction">/rest/restOrgInfo/changeOrgInfo</string>
+
+    <!-- 获取附件头像 -->
+    <string name="attachPhotoPreAction">/ykt/attachments/previewPhoto.do</string>
+    <!-- 获取用户头像 -->
+    <string name="userHeadPhotoAction">/rest/restUserInfo/getUserHeadPic</string>
+
+
+</resources>
