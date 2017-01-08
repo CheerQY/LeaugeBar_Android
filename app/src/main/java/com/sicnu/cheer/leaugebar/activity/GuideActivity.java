@@ -9,7 +9,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import com.sicnu.cheer.leaugebar.MainActivity;
 import com.sicnu.cheer.leaugebar.R;
 import com.sicnu.cheer.leaugebar.fragment.GuideFragment;
 import com.sicnu.cheer.leaugebar.fragment.GuideTraslatorPageTransform;
@@ -42,7 +41,7 @@ public class GuideActivity extends AppCompatActivity {
         findViewById(R.id.jump_over_guide).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent =new Intent(mThis, MainActivity.class);
+                Intent intent =new Intent(mThis, LoginActivity.class);
                 startActivity(intent);
             }
         });
