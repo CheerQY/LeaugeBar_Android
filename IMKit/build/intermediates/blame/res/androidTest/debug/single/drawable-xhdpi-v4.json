@@ -52,12 +52,12 @@
         "source": "G:\\Android\\LeaugeBar\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\rc_ic_voice_sent_play2.png"
     },
     {
-        "merged": "G:\\Android\\LeaugeBar\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\rc_ic_bubble_left.9.png",
-        "source": "G:\\Android\\LeaugeBar\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\rc_ic_bubble_left.9.png"
-    },
-    {
         "merged": "G:\\Android\\LeaugeBar\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\rc_ad_list_file_icon.png",
         "source": "G:\\Android\\LeaugeBar\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\rc_ad_list_file_icon.png"
+    },
+    {
+        "merged": "G:\\Android\\LeaugeBar\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\rc_ic_bubble_left.9.png",
+        "source": "G:\\Android\\LeaugeBar\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\rc_ic_bubble_left.9.png"
     },
     {
         "merged": "G:\\Android\\LeaugeBar\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\rc_conversation_list_empty.png",
@@ -760,12 +760,12 @@
         "source": "G:\\Android\\LeaugeBar\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\rc_ic_voice_sent_play1.png"
     },
     {
-        "merged": "G:\\Android\\LeaugeBar\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\rc_image_default.png",
-        "source": "G:\\Android\\LeaugeBar\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\rc_image_default.png"
-    },
-    {
         "merged": "G:\\Android\\LeaugeBar\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\rc_real_time_location_exit.png",
         "source": "G:\\Android\\LeaugeBar\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\rc_real_time_location_exit.png"
+    },
+    {
+        "merged": "G:\\Android\\LeaugeBar\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\rc_image_default.png",
+        "source": "G:\\Android\\LeaugeBar\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\rc_image_default.png"
     },
     {
         "merged": "G:\\Android\\LeaugeBar\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\rc_ic_bubble_no_right.9.png",

@@ -436,12 +436,12 @@
         "source": "G:\\Android\\LeaugeBar\\IMKit\\src\\main\\res\\drawable-xhdpi\\rc_icon_emoji_delete.png"
     },
     {
-        "merged": "G:\\Android\\LeaugeBar\\IMKit\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\rc_ic_voice_receive_play1.png",
-        "source": "G:\\Android\\LeaugeBar\\IMKit\\src\\main\\res\\drawable-xhdpi\\rc_ic_voice_receive_play1.png"
-    },
-    {
         "merged": "G:\\Android\\LeaugeBar\\IMKit\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\rc_ad_list_video_icon.png",
         "source": "G:\\Android\\LeaugeBar\\IMKit\\src\\main\\res\\drawable-xhdpi\\rc_ad_list_video_icon.png"
+    },
+    {
+        "merged": "G:\\Android\\LeaugeBar\\IMKit\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\rc_ic_voice_receive_play1.png",
+        "source": "G:\\Android\\LeaugeBar\\IMKit\\src\\main\\res\\drawable-xhdpi\\rc_ic_voice_receive_play1.png"
     },
     {
         "merged": "G:\\Android\\LeaugeBar\\IMKit\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\rc_edit_text_background_hover.9.png",

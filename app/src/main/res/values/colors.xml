@@ -3,4 +3,9 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <!--引导页背景色-->
+    <color name="welcome1_bg">#39be80</color>
+    <color name="welcome2_bg">#fead17</color>
+    <color name="welcome3_bg">#f17160</color>
 </resources>
