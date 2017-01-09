@@ -7,6 +7,7 @@ import android.graphics.Rect;
 import android.util.DisplayMetrics;
 import android.view.View;
 import android.view.WindowManager;
+import android.view.inputmethod.InputMethodManager;
 
 /**
  * 获得屏幕相关的辅助类
@@ -22,6 +23,17 @@ public class ScreenUtils
 		throw new UnsupportedOperationException("cannot be instantiated");
 	}
 
+	/**
+	 * 隐藏键盘
+	 * @param activity
+     */
+	public static void hideKeyboard(Activity activity) {
+		View view = activity.getCurrentFocus();
+		if (view != null) {
+			((InputMethodManager) activity.getSystemService(Context.INPUT_METHOD_SERVICE)).
+					hideSoftInputFromWindow(view.getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
+		}
+	}
 	/**
 	 * 获得屏幕高度
 	 * 

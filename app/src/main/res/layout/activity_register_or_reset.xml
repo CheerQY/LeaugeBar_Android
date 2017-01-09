@@ -45,11 +45,12 @@
                     android:paddingLeft="@dimen/login_layout_padding"
                     android:paddingRight="@dimen/login_layout_padding"
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
+                    android:layout_height="@dimen/register_layout_height"
                     android:orientation="horizontal"
                     >
                     <android.support.design.widget.TextInputLayout
-                        android:textColorHint="#f0f7f4"
+                        android:id="@+id/til_phone"
+                        android:textColorHint="@color/register_txt_color"
                         android:layout_width="0dp"
                         android:layout_weight="1"
                         android:theme="@style/TextLabel"
@@ -57,14 +58,14 @@
                         <EditText
                             android:textSize="13sp"
                             android:hint="@string/PhoneNumber"
-                            android:textColor="#f0f7f4"
-                            android:id="@+id/et_username"
+                            android:textColor="@color/register_txt_color"
+                            android:id="@+id/et_phone"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:inputType="phone"
                             android:background="@drawable/selector_bg_edit_2"
                             android:textCursorDrawable="@drawable/bg_input_cursor_2"
-                            android:paddingBottom="2dp"
+                            android:paddingBottom="@dimen/login_et_padding_bottom"
                             />
                     </android.support.design.widget.TextInputLayout>
                     <Button
@@ -83,23 +84,24 @@
                     android:paddingRight="@dimen/login_layout_padding"
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
-                    android:layout_height="40dp">
+                    android:layout_height="@dimen/register_layout_height">
                     <android.support.design.widget.TextInputLayout
-                        android:textColorHint="#f0f7f4"
+                        android:id="@+id/til_verify_code"
+                        android:textColorHint="@color/register_txt_color"
                         android:theme="@style/TextLabel"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
                         <EditText
                             android:textSize="13sp"
                             android:hint="@string/Verify_code"
-                            android:textColor="#f0f7f4"
+                            android:textColor="@color/register_txt_color"
                             android:id="@+id/et_verify_code"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:inputType="textPassword"
+                            android:inputType="number"
                             android:background="@drawable/selector_bg_edit_2"
                             android:textCursorDrawable="@drawable/bg_input_cursor_2"
-                            android:paddingBottom="2dp"
+                            android:paddingBottom="@dimen/login_et_padding_bottom"
                             />
                     </android.support.design.widget.TextInputLayout>
                 </LinearLayout>
@@ -108,24 +110,24 @@
                     android:paddingRight="@dimen/login_layout_padding"
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
-                    android:layout_height="40dp">
+                    android:layout_height="@dimen/register_layout_height">
                     <android.support.design.widget.TextInputLayout
-
-                        android:textColorHint="#f0f7f4"
+                        android:id="@+id/til_password"
+                        android:textColorHint="@color/register_txt_color"
                         android:theme="@style/TextLabel"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
                         <EditText
                             android:textSize="13sp"
                             android:hint="@string/Password"
-                            android:textColor="#f0f7f4"
+                            android:textColor="@color/register_txt_color"
                             android:id="@+id/et_password"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:inputType="textPassword"
                             android:background="@drawable/selector_bg_edit_2"
                             android:textCursorDrawable="@drawable/bg_input_cursor_2"
-                            android:paddingBottom="2dp"
+                            android:paddingBottom="@dimen/login_et_padding_bottom"
                             />
                     </android.support.design.widget.TextInputLayout>
                 </LinearLayout>
@@ -134,16 +136,16 @@
                     android:paddingRight="@dimen/login_layout_padding"
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
-                    android:layout_height="40dp">
+                    android:layout_height="@dimen/register_layout_height">
                     <android.support.design.widget.TextInputLayout
-
-                        android:textColorHint="#f0f7f4"
+                        android:id="@+id/til_repeat_password"
+                        android:textColorHint="@color/register_txt_color"
                         android:theme="@style/TextLabel"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
                         <EditText
                             android:textSize="13sp"
-                            android:textColor="#f0f7f4"
+                            android:textColor="@color/register_txt_color"
                             android:hint="@string/repeat_password"
                             android:id="@+id/et_repeatpassword"
                             android:layout_width="match_parent"
@@ -151,7 +153,7 @@
                             android:inputType="textPassword"
                             android:background="@drawable/selector_bg_edit_2"
                             android:textCursorDrawable="@drawable/bg_input_cursor_2"
-                            android:paddingBottom="2dp"
+                            android:paddingBottom="@dimen/login_et_padding_bottom"
                             />
                     </android.support.design.widget.TextInputLayout>
                 </LinearLayout>

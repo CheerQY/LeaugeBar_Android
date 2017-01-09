@@ -41,7 +41,7 @@
                 <shape android:shape="rectangle">
                     <stroke
                         android:width="0.5dp"
-                        android:color="#f0f7f4" />
+                        android:color="@color/register_txt_color" />
                 </shape>
             </item>
         </layer-list>

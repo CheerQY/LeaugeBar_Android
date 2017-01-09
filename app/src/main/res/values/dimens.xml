@@ -17,4 +17,5 @@
     <dimen name="login_layout_padding">30dp</dimen>
     <dimen name="login_et_padding_bottom">2dp</dimen>
     <dimen name="send_verify_code_margin">3dp</dimen>
+    <dimen name="register_layout_height">40dp</dimen>
 </resources>

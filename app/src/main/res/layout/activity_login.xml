@@ -62,7 +62,7 @@
                         android:inputType="textPersonName"
                         android:background="@drawable/selector_bg_edit"
                         android:textCursorDrawable="@drawable/bg_input_cursor"
-                        android:paddingBottom="2dp"
+                        android:paddingBottom="@dimen/login_et_padding_bottom"
                         />
                 </android.support.design.widget.TextInputLayout>
             </LinearLayout>
@@ -86,7 +86,7 @@
                         android:inputType="textPassword"
                         android:background="@drawable/selector_bg_edit"
                         android:textCursorDrawable="@drawable/bg_input_cursor"
-                        android:paddingBottom="2dp"
+                        android:paddingBottom="@dimen/login_et_padding_bottom"
                         />
                 </android.support.design.widget.TextInputLayout>
             </LinearLayout>

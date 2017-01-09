@@ -14,7 +14,7 @@
         android:padding="@dimen/activity_horizontal_margin"
         android:layout_gravity="center_horizontal"
         android:layout_centerHorizontal="true"
-        app:layout_widthPercent="55%"
+        app:layout_widthPercent="60%"
         app:layout_heightPercent="65%"
         app:layout_marginTopPercent="8.5%"
         android:background="@mipmap/phone_frame"

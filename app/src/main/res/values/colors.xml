@@ -8,4 +8,6 @@
     <color name="welcome1_bg">#39be80</color>
     <color name="welcome2_bg">#fead17</color>
     <color name="welcome3_bg">#f17160</color>
+    <!--登录界面-->
+    <color name="register_txt_color">#f0f7f4</color>
 </resources>
