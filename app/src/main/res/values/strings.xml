@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">LeaugeBar</string>
+    <string name="app_name">社团吧</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -7,13 +7,28 @@
     <string name="action_settings">Settings</string>
 
     <!--登录页-->
-    <string name="login_success">login success</string>
-    <string name="login">LOGIN</string>
-    <string name="Username">Username</string>
-    <string name="Password">Password</string>
-    <string name="forgot_your_password">Forgot your password ?</string>
-    <string name="go">GO</string>
-    <string name="repeat_password">Repeat Password</string>
-    <string name="next">NEXT</string>
-    <string name="register">REGISTER</string>
+    <!--<string name="login_success">login success</string>-->
+    <!--<string name="login">LOGIN</string>-->
+    <!--<string name="Username">Username</string>-->
+    <!--<string name="Password">Password</string>-->
+    <!--<string name="forgot_your_password">Forgot your password ?</string>-->
+    <!--<string name="go">GO</string>-->
+    <!--<string name="repeat_password">Repeat Password</string>-->
+    <!--<string name="next">NEXT</string>-->
+    <!--<string name="register">REGISTER</string>-->
+
+    <string name="login_success">登录成功</string>
+    <string name="login">登录</string>
+    <string name="Username">用户名（手机号）</string>
+    <string name="PhoneNumber">手机号</string>
+    <string name="sendVerifyCode">发送验证码</string>
+    <string name="Verify_code">验证码</string>
+    <string name="Password">密码</string>
+    <string name="new_password">新密码</string>
+    <string name="forgot_your_password">忘记密码 ?</string>
+    <string name="go">登录</string>
+    <string name="repeat_password">确认密码</string>
+    <string name="next">提交</string>
+    <string name="register">注册</string>
+    <string name="password_reset">重置密码</string>
 </resources>

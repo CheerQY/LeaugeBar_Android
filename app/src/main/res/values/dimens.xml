@@ -7,10 +7,14 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
 
-
+    <!--引导页面-->
     <dimen name="guide_common_icon_size">60dp</dimen>
     <dimen name="guide_button_margin">20dp</dimen>
     <dimen name="guide_next_icon_size">40dp</dimen>
     <dimen name="guide_txt_margin">40dp</dimen>
     <dimen name="guide_txt_size">18sp</dimen>
+    <!--登录页面-->
+    <dimen name="login_layout_padding">30dp</dimen>
+    <dimen name="login_et_padding_bottom">2dp</dimen>
+    <dimen name="send_verify_code_margin">3dp</dimen>
 </resources>

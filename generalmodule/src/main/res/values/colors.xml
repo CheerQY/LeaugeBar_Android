@@ -34,6 +34,7 @@
 
     <color name="full_transparent">#00000000</color>
     <color name="half_transparent">#aa000000</color>
+    <color name="white_transparent">#eeffffff</color>
     <!-- dialog -->
     <color name="input_color_bg">#F1F1F1</color>
     <color name="dialog_title_color">#555555</color>

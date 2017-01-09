@@ -5,20 +5,21 @@
     android:id="@+id/activity_register"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.sicnu.cheer.leaugebar.activity.RegisterActivity">
+    tools:context="com.sicnu.cheer.leaugebar.activity.RegisterOrResetActivity">
 
     <FrameLayout
-        android:layout_centerInParent="true"
-        android:paddingTop="70dp"
+        android:paddingTop="50dp"
         android:layout_width="320dp"
-        android:layout_height="400dp">
+        android:layout_height="400dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
         <android.support.v7.widget.CardView
             android:id="@+id/cv_add"
             app:cardBackgroundColor="#2ea67f"
             android:layout_marginTop="10dp"
             android:layout_gravity="center_horizontal"
             android:layout_width="match_parent"
-            android:layout_height="320dp"
+            android:layout_height="355dp"
             app:cardCornerRadius="6dp"
             app:cardElevation="3dp"
             app:cardUseCompatPadding="true"
@@ -29,10 +30,11 @@
                 android:layout_height="match_parent">
 
                 <TextView
+                    android:id="@+id/register_reset_tv"
                     android:layout_marginTop="50dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="50dp"
+                    android:layout_marginLeft="@dimen/login_layout_padding"
                     android:text="@string/register"
                     android:textColor="#fff"
                     android:textSize="16sp"
@@ -40,23 +42,61 @@
                     />
                 <LinearLayout
                     android:layout_marginTop="10dp"
-                    android:paddingStart="50dp"
-                    android:paddingEnd="30dp"
+                    android:paddingLeft="@dimen/login_layout_padding"
+                    android:paddingRight="@dimen/login_layout_padding"
                     android:layout_width="match_parent"
-                    android:layout_height="40dp">
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    >
                     <android.support.design.widget.TextInputLayout
                         android:textColorHint="#f0f7f4"
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
                         android:theme="@style/TextLabel"
                         android:layout_height="wrap_content">
                         <EditText
                             android:textSize="13sp"
-                            android:hint="@string/Username"
+                            android:hint="@string/PhoneNumber"
                             android:textColor="#f0f7f4"
                             android:id="@+id/et_username"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:inputType="textPersonName"
+                            android:inputType="phone"
+                            android:background="@drawable/selector_bg_edit_2"
+                            android:textCursorDrawable="@drawable/bg_input_cursor_2"
+                            android:paddingBottom="2dp"
+                            />
+                    </android.support.design.widget.TextInputLayout>
+                    <Button
+                        android:id="@+id/send_verify_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/sendVerifyCode"
+                        android:textColor="@color/white"
+                        android:background="@drawable/bg_send_verifycode"
+                        android:padding="@dimen/send_verify_code_margin"
+                        android:layout_margin="@dimen/send_verify_code_margin"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:paddingLeft="@dimen/login_layout_padding"
+                    android:paddingRight="@dimen/login_layout_padding"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+                    <android.support.design.widget.TextInputLayout
+                        android:textColorHint="#f0f7f4"
+                        android:theme="@style/TextLabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <EditText
+                            android:textSize="13sp"
+                            android:hint="@string/Verify_code"
+                            android:textColor="#f0f7f4"
+                            android:id="@+id/et_verify_code"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPassword"
                             android:background="@drawable/selector_bg_edit_2"
                             android:textCursorDrawable="@drawable/bg_input_cursor_2"
                             android:paddingBottom="2dp"
@@ -64,8 +104,8 @@
                     </android.support.design.widget.TextInputLayout>
                 </LinearLayout>
                 <LinearLayout
-                    android:paddingStart="50dp"
-                    android:paddingEnd="30dp"
+                    android:paddingLeft="@dimen/login_layout_padding"
+                    android:paddingRight="@dimen/login_layout_padding"
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
                     android:layout_height="40dp">
@@ -90,8 +130,8 @@
                     </android.support.design.widget.TextInputLayout>
                 </LinearLayout>
                 <LinearLayout
-                    android:paddingStart="50dp"
-                    android:paddingEnd="30dp"
+                    android:paddingLeft="@dimen/login_layout_padding"
+                    android:paddingRight="@dimen/login_layout_padding"
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
                     android:layout_height="40dp">
