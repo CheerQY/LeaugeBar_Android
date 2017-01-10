@@ -2,8 +2,14 @@ package com.sicnu.cheer.leaugebar.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.TabLayout;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v4.view.ViewPager;
 import android.util.DisplayMetrics;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -19,6 +25,8 @@ import com.sicnu.cheer.im.activity.ConversationActivity;
 import com.sicnu.cheer.leaugebar.R;
 import com.sicnu.cheer.leaugebar.adapter.HomeLeftMenuAdapter;
 import com.sicnu.cheer.leaugebar.bean.MenuBean;
+import com.sicnu.cheer.leaugebar.fragment.HomeFragment;
+import com.sicnu.cheer.leaugebar.fragment.TabFragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,23 +36,35 @@ import butterknife.InjectView;
 public class MainActivity extends AppCompatActivity {
 
     private MainActivity mThis;
-    //定义常用数据类型
     private List<MenuBean> list;
     private HomeLeftMenuAdapter adapter;
+    private HomeFragment homeFragment;
 
     //views
     @InjectView(R.id.home_fl)
     FrameLayout frameLayout;
+    @InjectView(R.id.toolbar)
+    Toolbar toolbar;
+    @InjectView(R.id.viewPager)
+    ViewPager viewPager;
+
 
     private ListView listView;
     private SlidingMenu slidingMenu;
+    private FragmentManager fragmentManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mThis = this;
         setContentView(R.layout.activity_main);
+        initData();
         initView();
+    }
+
+    private void initData() {
+        fragmentManager=getSupportFragmentManager();
+        setTabSelection(0);
     }
 
     public void initView() {
@@ -66,7 +86,48 @@ public class MainActivity extends AppCompatActivity {
         });
         setSlidingMenu(view);
     }
+    /**
+     * 切换Fragment操作
+     * @param tabSelection
+     */
+    public void setTabSelection(int tabSelection) {
 
+        FragmentTransaction transaction = fragmentManager.beginTransaction();
+        hideFragments(transaction);
+        switch (tabSelection) {
+            case 0:
+                if (homeFragment == null) {
+                    homeFragment = new HomeFragment();
+                    transaction.add(R.id.home_fl, homeFragment);
+                } else {
+                    transaction.show(homeFragment);
+                }
+                break;
+            case 1:
+//                if (teamHistory == null) {
+//                    teamHistory = new TeamHistoryFragment();
+//                    transaction.add(R.id.fragment_content, teamHistory);
+//                } else {
+//                    transaction.show(teamHistory);
+//                }
+                break;
+            default:
+                break;
+        }
+        transaction.commit();
+    }
+    /**
+     * 隐藏所有的fragments
+     * @param transaction
+     */
+    private void hideFragments(FragmentTransaction transaction) {
+        if (homeFragment != null) {
+            transaction.hide(homeFragment);
+        }
+//        if (teamHistory != null) {
+//            transaction.hide(teamHistory);
+//        }
+    }
     //填充菜单ListView中的list
     private void fillListData() {
         list = new ArrayList<>();

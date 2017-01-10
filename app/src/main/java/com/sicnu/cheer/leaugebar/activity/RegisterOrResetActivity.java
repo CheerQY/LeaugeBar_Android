@@ -40,7 +40,7 @@ public class RegisterOrResetActivity extends AppCompatActivity {
     Button sendVerify;
     @InjectView(R.id.register_reset_tv)
     TextView registerOrReset;
-    @InjectView(R.id.et_password)
+    @InjectView(R.id.et_phone)
     EditText phoneET;
     @InjectView(R.id.et_verify_code)
     EditText verifyCodeET;
@@ -184,7 +184,8 @@ public class RegisterOrResetActivity extends AppCompatActivity {
                 CountDownTimerUtils mCountDownTimerUtils = new CountDownTimerUtils(sendVerify, 60000, 1000);
                 mCountDownTimerUtils.start();
                 String phone = phoneET.getText().toString().trim().replaceAll("\\s*", "");
-                SMSSDK.getVerificationCode(COUNTRY_CODE,phone);
+
+               SMSSDK.getVerificationCode(COUNTRY_CODE,phone);
                 break;
             case R.id.bt_go:
                 //手动隐藏键盘
