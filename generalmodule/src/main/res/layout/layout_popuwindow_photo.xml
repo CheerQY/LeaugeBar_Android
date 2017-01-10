@@ -10,7 +10,7 @@
         android:id="@+id/camera"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/button_blue"
+        android:background="@drawable/button_green"
         android:textColor="@color/white"
         android:layout_margin="5dp"
         android:text="拍照"/>
@@ -18,7 +18,7 @@
         android:id="@+id/album"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/button_blue"
+        android:background="@drawable/button_green"
         android:textColor="@color/white"
         android:layout_margin="5dp"
         android:text="从相册选择"/>

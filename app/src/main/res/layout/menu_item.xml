@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:padding="@dimen/drawer_item_padding"
+    android:background="@color/drawer_item_transparent"
+    >
+    <ImageView
+        android:layout_width="@dimen/drawer_icon_size"
+        android:layout_height="@dimen/drawer_icon_size"
+        android:id="@+id/item_image"
+        android:src="@mipmap/share_set"
+        android:layout_gravity="center_vertical"
+        />
+    <TextView
+        android:id="@+id/item_text"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="新闻"
+        android:textColor="@color/white"
+        android:textSize="@dimen/drawer_txt_size"
+        />
+
+</LinearLayout>

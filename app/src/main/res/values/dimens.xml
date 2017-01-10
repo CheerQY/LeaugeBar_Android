@@ -18,4 +18,8 @@
     <dimen name="login_et_padding_bottom">2dp</dimen>
     <dimen name="send_verify_code_margin">3dp</dimen>
     <dimen name="register_layout_height">40dp</dimen>
+    <!--侧滑页面-->
+    <dimen name="drawer_item_padding">10dp</dimen>
+    <dimen name="drawer_txt_size">18sp</dimen>
+    <dimen name="drawer_icon_size">20dp</dimen>
 </resources>

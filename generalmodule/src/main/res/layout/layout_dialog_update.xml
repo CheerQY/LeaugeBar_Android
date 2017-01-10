@@ -72,7 +72,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:layout_weight="1"
-            android:background="@drawable/button_blue"
+            android:background="@drawable/button_green"
             android:minHeight="20dp"
             android:minWidth="50dp"
             android:padding="10dp"

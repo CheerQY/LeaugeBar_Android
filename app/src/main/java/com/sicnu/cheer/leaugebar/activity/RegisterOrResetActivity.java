@@ -77,7 +77,7 @@ public class RegisterOrResetActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register_or_reset);
         mThis = this;
-        SMSSDK.initSDK(this, Constants.appkey,Constants.appSecret);//初始化短信验证服务类
+        SMSSDK.initSDK(getApplicationContext(), Constants.appkey,Constants.appSecret);//初始化短信验证服务类
         SMSSDK.registerEventHandler(eh);//注册短信验证回调接收器
         ButterKnife.inject(this);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {

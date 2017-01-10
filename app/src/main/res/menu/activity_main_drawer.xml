@@ -3,33 +3,28 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
+            android:id="@+id/nav_share"
+            android:icon="@mipmap/share_set"
+            android:title="推荐" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
-        <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
-        <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:id="@+id/nav_switchOrg"
+            android:icon="@mipmap/switch_org"
+            android:title="切换社团" />
     </group>
-
-    <item android:title="Communicate">
+    <item android:title="联系与反馈">
         <menu>
             <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
+                android:id="@+id/nav_suggestion"
+                android:icon="@mipmap/suggesstion"
+                android:title="意见建议" />
             <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
+                android:id="@+id/nav_versionCheck"
+                android:icon="@mipmap/version_set"
+                android:title="检查更新" />
+            <item
+                android:id="@+id/nav_aboutUs"
+                android:icon="@mipmap/about_set"
+                android:title="关于我们" />
         </menu>
     </item>
 

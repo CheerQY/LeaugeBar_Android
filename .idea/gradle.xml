@@ -16,6 +16,7 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/generalmodule" />
             <option value="$PROJECT_DIR$/libqrcode" />
+            <option value="$PROJECT_DIR$/slidingmenu" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
