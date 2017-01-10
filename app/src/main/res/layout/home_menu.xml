@@ -14,12 +14,15 @@
         android:background="@color/light_transparent"
         android:gravity="center"
         >
+
         <ImageView
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:src="@mipmap/default_user_img"
             android:padding="10dp"
-            />
+            android:layout_marginTop="10dp"
+            android:id="@+id/imageView2" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -27,7 +30,7 @@
             android:gravity="center"
             android:textSize="@dimen/drawer_txt_size"
             android:textColor="@color/white"
-            android:padding="20dp"
+            android:padding="10dp"
             />
     </LinearLayout>
     <ListView
