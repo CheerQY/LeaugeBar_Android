@@ -59,8 +59,8 @@ public class HomeFragment extends Fragment{
 
     private void setupToolbar() {
         context.setSupportActionBar(toolbar);
-        context.getSupportActionBar().setTitle("TabbedCoordinatorLayout");
-        context.getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        context.getSupportActionBar().setTitle("");
+//        context.getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     private void setupViewPager(ViewPager viewPager) {

@@ -14,4 +14,5 @@
     <!--侧滑页面-->
     <color name="drawer_item_transparent">#45000000</color>
     <color name="drawer_category_transparent">#25000000</color>
+    <color name="tab_gray">#D8DADD</color>
 </resources>

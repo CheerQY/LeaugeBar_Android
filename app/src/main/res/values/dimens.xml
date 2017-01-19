@@ -6,6 +6,9 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
+    <!--通用间距-->
+    <dimen name="tab_unread_message">16dp</dimen>
+    <dimen name="top_right_btn_size">55dp</dimen>
 
     <!--引导页面-->
     <dimen name="guide_common_icon_size">60dp</dimen>

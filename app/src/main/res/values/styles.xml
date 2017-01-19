@@ -28,4 +28,41 @@
         <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
         <item name="colorControlActivated">#FFCC00</item>
     </style>
+
+
+    <!--home界面的tab按钮的格式-->
+    <style name="home_tab_btn_style">
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_gravity">bottom</item>
+    </style>
+
+    <!--未读消息视图父样式-->
+    <style name="notRedCountViewStyleParent">
+        <item name="android:background">@drawable/message_tip_bg</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">1dp</item>
+        <item name="android:text">99+</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+    <!--右上角未读消息视图样式-->
+    <style name="notRedCountViewStyle" parent="notRedCountViewStyleParent">
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_marginTop">13dp</item>
+        <item name="android:textSize">6sp</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <!--导航栏未读消息视图样式-->
+    <style name="notRedCountViewStyle4Nav" parent="notRedCountViewStyleParent">
+        <item name="android:textSize">8sp</item>
+        <!--<item name="android:layout_marginLeft">10dp</item>-->
+        <item name="android:visibility">gone</item>
+    </style>
 </resources>

@@ -35,4 +35,5 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile project(':IM')
     compile project(':slidingmenu')
+    compile 'com.github.tosslife:foldingtabbar:1.0.0'
 }

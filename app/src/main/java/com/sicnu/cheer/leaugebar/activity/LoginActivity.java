@@ -14,7 +14,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.sicnu.cheer.generalmodule.util.StringUtils;
+import com.sicnu.cheer.generalmodule.util.UIHelper;
 import com.sicnu.cheer.leaugebar.R;
+import com.sicnu.cheer.leaugebar.utils.ValidateUtil;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
@@ -34,12 +37,19 @@ public class LoginActivity extends AppCompatActivity {
     FloatingActionButton fab;
     @InjectView(R.id.forget_password_tv)
     TextView fpt;
+
     private Intent intent;
+    private LoginActivity mThis;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        mThis = this;
+        initData();
+    }
+
+    private void initData() {
         ButterKnife.inject(this);
         intent = new Intent(this, RegisterOrResetActivity.class);
     }
@@ -74,15 +84,28 @@ public class LoginActivity extends AppCompatActivity {
                 }
                 break;
             case R.id.bt_go:
-                Explode explode = new Explode();
-                explode.setDuration(500);
-
-                getWindow().setExitTransition(explode);
-                getWindow().setEnterTransition(explode);
-                ActivityOptionsCompat oc2 = ActivityOptionsCompat.makeSceneTransitionAnimation(this);
-                Intent i2 = new Intent(this,MainActivity.class);
-                startActivity(i2, oc2.toBundle());
+                doLogin();
                 break;
         }
+    }
+
+    private void doLogin() {
+        if (!ValidateUtil.isMobileNO(etUsername.getText().toString())) {
+            UIHelper.ToastMessage(mThis,"请输入正确的手机号！");
+            return;
+        }
+        if (StringUtils.isEmpty(etPassword.getText().toString())){
+            UIHelper.ToastMessage(mThis,"请输入用户名密码！");
+            return;
+        }
+
+        Explode explode = new Explode();
+        explode.setDuration(500);
+        getWindow().setExitTransition(explode);
+        getWindow().setEnterTransition(explode);
+        ActivityOptionsCompat oc2 = ActivityOptionsCompat.makeSceneTransitionAnimation(this);
+        Intent i2 = new Intent(this,MainActivity.class);
+        startActivity(i2, oc2.toBundle());
+
     }
 }
