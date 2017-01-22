@@ -11,5 +11,4 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         tools:listitem="@layout/list_item"/>
-    <include layout="@layout/layout_tab"/>
 </LinearLayout>

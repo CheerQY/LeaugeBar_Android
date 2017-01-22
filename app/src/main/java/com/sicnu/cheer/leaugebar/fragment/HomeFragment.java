@@ -15,12 +15,14 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.sicnu.cheer.leaugebar.R;
+import com.srx.widget.TabBarView;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Created by cheer on 2017/1/10.
+ * 主页面的主模块
  */
 
 public class HomeFragment extends Fragment{
@@ -29,6 +31,7 @@ public class HomeFragment extends Fragment{
     private Toolbar toolbar;
     private CollapsingToolbarLayout collapsingToolbar;
     private AppCompatActivity context;
+    private TabBarView tabBarView;
 
     @Nullable
     @Override
@@ -39,6 +42,7 @@ public class HomeFragment extends Fragment{
         setupToolbar();
         setupViewPager();
         setupCollapsingToolbar();
+        setupTabView();
         return view;
     }
 
@@ -47,6 +51,9 @@ public class HomeFragment extends Fragment{
         tabLayout = ((TabLayout) view.findViewById(R.id.tabs));
         toolbar = ((Toolbar) view.findViewById(R.id.toolbar));
         collapsingToolbar = ((CollapsingToolbarLayout) view.findViewById(R.id.collapse_toolbar));
+
+        //可折叠的底部导航按钮
+        tabBarView = ((TabBarView) view.findViewById(R.id.tabBarView));
     }
     private void setupCollapsingToolbar() {
         collapsingToolbar.setTitleEnabled(false);
@@ -100,4 +107,47 @@ public class HomeFragment extends Fragment{
             return mFragmentTitleList.get(position);
         }
     }
+
+
+    private void setupTabView() {
+        //设置主按钮图标
+        tabBarView.setMainBitmap(R.mipmap.icon_plus);
+
+        //设置菜单对应位置按钮图标及两侧图标
+        tabBarView.bindBtnsForPage(0, R.mipmap.icon_event,0, 0);
+        tabBarView.bindBtnsForPage(1, R.mipmap.icon_message,0, 0);
+        tabBarView.bindBtnsForPage(2, R.mipmap.icon_manage,0, 0);
+        tabBarView.bindBtnsForPage(3, R.mipmap.icon_contacts,0, 0);
+
+        //设置初始默认选中
+        tabBarView.initializePage(0);
+
+        //添加监听
+        tabBarView.setOnTabBarClickListener(onTabBarClickListener);
+    }
+
+    //监听回调
+    private TabBarView.OnTabBarClickListener onTabBarClickListener = new TabBarView.OnTabBarClickListener() {
+
+        @Override
+        public void onMainBtnsClick(int position, int[] clickLocation) {
+            //点击菜单
+        }
+
+        @Override
+        public void onMainBtnsClick(int position) {
+            //点击菜单
+        }
+
+        @Override
+        public void onLeftBtnClick(int page) {
+            //点击对应菜单的左侧按钮
+        }
+
+        @Override
+        public void onRightBtnClick(int page) {
+            //点击对应菜单的右侧按钮
+        }
+
+    };
 }

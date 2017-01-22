@@ -90,14 +90,14 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void doLogin() {
-        if (!ValidateUtil.isMobileNO(etUsername.getText().toString())) {
-            UIHelper.ToastMessage(mThis,"请输入正确的手机号！");
-            return;
-        }
-        if (StringUtils.isEmpty(etPassword.getText().toString())){
-            UIHelper.ToastMessage(mThis,"请输入用户名密码！");
-            return;
-        }
+//        if (!ValidateUtil.isMobileNO(etUsername.getText().toString())) {
+//            UIHelper.ToastMessage(mThis,"请输入正确的手机号！");
+//            return;
+//        }
+//        if (StringUtils.isEmpty(etPassword.getText().toString())){
+//            UIHelper.ToastMessage(mThis,"请输入用户名密码！");
+//            return;
+//        }
 
         Explode explode = new Explode();
         explode.setDuration(500);
