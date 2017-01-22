@@ -62,7 +62,6 @@ public abstract class BaseFragment extends Fragment
     /**
      * 初始化数据
      * @author 漆英
-     * @date 2016-5-26 下午3:57:48  
      * @param arguments 接收到的从其他地方传递过来的参数
      */
     protected void initData(Bundle arguments)
@@ -73,7 +72,6 @@ public abstract class BaseFragment extends Fragment
     /**
      * 初始化View
      * @author 漆英
-     * @date 2016-5-26 下午3:58:49
      */
     protected void initView()
     {
@@ -83,7 +81,6 @@ public abstract class BaseFragment extends Fragment
     /**
      * 设置监听事件
      * @author 漆英
-     * @date 2016-5-26 下午3:59:36
      */
     protected void setListener()
     {
@@ -106,7 +103,6 @@ public abstract class BaseFragment extends Fragment
     /**
      * 用户可见时执行的操作
      * @author 漆英
-     * @date 2016-5-26 下午4:09:39
      */
     protected void onVisibleToUser()
     {
@@ -119,7 +115,6 @@ public abstract class BaseFragment extends Fragment
     /**
      * 懒加载，仅当用户可见切view初始化结束后才会执行
      * @author 漆英
-     * @date 2016-5-26 下午4:10:20
      */
     protected void onLazyLoad()
     {
@@ -140,7 +135,6 @@ public abstract class BaseFragment extends Fragment
     /**
      * 设置根布局资源id
      * @author 漆英
-     * @date 2016-5-26 下午3:57:09  
      * @return
      */
     protected abstract int setLayoutResourceId();
