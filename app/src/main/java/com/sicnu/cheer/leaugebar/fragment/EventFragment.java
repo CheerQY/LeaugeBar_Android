@@ -15,7 +15,6 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.sicnu.cheer.leaugebar.R;
-import com.srx.widget.TabBarView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,24 +24,24 @@ import java.util.List;
  * 主页面的主模块
  */
 
-public class HomeFragment extends Fragment{
+public class EventFragment extends Fragment{
     private ViewPager viewPager;
     private TabLayout tabLayout;
     private Toolbar toolbar;
     private CollapsingToolbarLayout collapsingToolbar;
     private AppCompatActivity context;
-    private TabBarView tabBarView;
+//    private TabBarView tabBarView;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view=inflater.inflate(R.layout.fragment_home,null);
+        View view=inflater.inflate(R.layout.fragment_event,null);
         context = ((AppCompatActivity) getActivity());
         initView(view);
         setupToolbar();
         setupViewPager();
         setupCollapsingToolbar();
-        setupTabView();
+//        setupTabView();
         return view;
     }
 
@@ -52,8 +51,8 @@ public class HomeFragment extends Fragment{
         toolbar = ((Toolbar) view.findViewById(R.id.toolbar));
         collapsingToolbar = ((CollapsingToolbarLayout) view.findViewById(R.id.collapse_toolbar));
 
-        //可折叠的底部导航按钮
-        tabBarView = ((TabBarView) view.findViewById(R.id.tabBarView));
+//        //可折叠的底部导航按钮
+//        tabBarView = ((TabBarView) view.findViewById(R.id.tabBarView));
     }
     private void setupCollapsingToolbar() {
         collapsingToolbar.setTitleEnabled(false);
@@ -108,46 +107,4 @@ public class HomeFragment extends Fragment{
         }
     }
 
-
-    private void setupTabView() {
-        //设置主按钮图标
-        tabBarView.setMainBitmap(R.mipmap.icon_plus);
-
-        //设置菜单对应位置按钮图标及两侧图标
-        tabBarView.bindBtnsForPage(0, R.mipmap.icon_event,0, 0);
-        tabBarView.bindBtnsForPage(1, R.mipmap.icon_message,0, 0);
-        tabBarView.bindBtnsForPage(2, R.mipmap.icon_manage,0, 0);
-        tabBarView.bindBtnsForPage(3, R.mipmap.icon_contacts,0, 0);
-
-        //设置初始默认选中
-        tabBarView.initializePage(0);
-
-        //添加监听
-        tabBarView.setOnTabBarClickListener(onTabBarClickListener);
-    }
-
-    //监听回调
-    private TabBarView.OnTabBarClickListener onTabBarClickListener = new TabBarView.OnTabBarClickListener() {
-
-        @Override
-        public void onMainBtnsClick(int position, int[] clickLocation) {
-            //点击菜单
-        }
-
-        @Override
-        public void onMainBtnsClick(int position) {
-            //点击菜单
-        }
-
-        @Override
-        public void onLeftBtnClick(int page) {
-            //点击对应菜单的左侧按钮
-        }
-
-        @Override
-        public void onRightBtnClick(int page) {
-            //点击对应菜单的右侧按钮
-        }
-
-    };
 }

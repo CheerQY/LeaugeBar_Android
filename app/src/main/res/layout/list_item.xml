@@ -1,33 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.CardView
-    android:id="@+id/cardlist_item"
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_margin="5dp"
-    android:foreground="?android:attr/selectableItemBackground"
-    android:orientation="vertical"
-    card_view:cardCornerRadius="5dp"
-    card_view:cardElevation="@dimen/cardview_default_elevation">
-
-    <LinearLayout
-        android:background="#e6e6e6"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardlist_item"
         android:layout_width="match_parent"
-        android:layout_height="?attr/listPreferredItemHeight"
-        android:gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginBottom="30dp"
+        android:foreground="?android:attr/selectableItemBackground"
         android:orientation="vertical"
-        android:paddingBottom="8dp"
-        android:paddingLeft="@dimen/activity_horizontal_margin"
-        android:paddingRight="@dimen/activity_horizontal_margin"
-        android:paddingTop="8dp">
+        card_view:cardCornerRadius="5dp"
+        card_view:cardElevation="@dimen/cardview_default_elevation">
 
-        <TextView
-            android:id="@+id/listitem_name"
-            android:layout_width="wrap_content"
+        <RelativeLayout
+            android:background="@color/card_bg"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="@dimen/abc_text_size_subhead_material" />
-    </LinearLayout>
+            android:gravity="center_vertical"
+            android:orientation="vertical">
 
-</android.support.v7.widget.CardView>
+            <ImageView
+                android:id="@+id/state_icon_iv"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@mipmap/on_going"
+                />
+            <TextView
+                android:id="@+id/event_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/title_txt_size"
+                android:layout_marginTop="@dimen/title_margin_top"
+                android:layout_marginLeft="@dimen/title_margin_left"
+                android:text="轮滑招新"
+                android:typeface="sans"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/listitem_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/state_icon_iv"
+                android:textSize="@dimen/content_txt_size"
+                android:padding="10dp"
+                android:text="内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/listitem_content"
+                android:gravity="center"
+                android:padding="5dp"
+                >
+                <ImageView
+                    android:layout_width="@dimen/small_icon_size"
+                    android:layout_height="@dimen/small_icon_size"
+                    android:src="@mipmap/view"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2"
+                    />
+                <ImageView
+                    android:layout_width="@dimen/small_icon_size"
+                    android:layout_height="@dimen/small_icon_size"
+                    android:src="@mipmap/like"
+
+                    android:layout_marginLeft="20dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="14"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <ImageView
+        android:layout_width="@dimen/state_icon_size"
+        android:layout_height="@dimen/state_icon_size"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:src="@mipmap/logo_circle"
+        />
+</RelativeLayout>
+
 

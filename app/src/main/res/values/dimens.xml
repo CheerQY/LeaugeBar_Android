@@ -25,4 +25,11 @@
     <dimen name="drawer_item_padding">10dp</dimen>
     <dimen name="drawer_txt_size">18sp</dimen>
     <dimen name="drawer_icon_size">20dp</dimen>
+    <!--主页面cardView中的间距-->
+    <dimen name="state_icon_size">60dp</dimen>
+    <dimen name="title_margin_top">20dp</dimen>
+    <dimen name="title_margin_left">40dp</dimen>
+    <dimen name="title_txt_size">16sp</dimen>
+    <dimen name="content_txt_size">14sp</dimen>
+    <dimen name="small_icon_size">20dp</dimen>
 </resources>

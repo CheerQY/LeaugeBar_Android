@@ -1,36 +1,28 @@
 package com.sicnu.cheer.leaugebar.activity;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.CollapsingToolbarLayout;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.TabLayout;
-import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.app.FragmentTransaction;
-import android.support.v4.view.ViewPager;
-import android.util.DisplayMetrics;
+import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.widget.AdapterView;
 import android.widget.FrameLayout;
 import android.widget.ListView;
 
 import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
 import com.sicnu.cheer.generalmodule.util.ScreenUtils;
-import com.sicnu.cheer.im.activity.ConversationActivity;
 import com.sicnu.cheer.leaugebar.R;
 import com.sicnu.cheer.leaugebar.adapter.HomeLeftMenuAdapter;
 import com.sicnu.cheer.leaugebar.bean.MenuBean;
-import com.sicnu.cheer.leaugebar.fragment.HomeFragment;
-import com.sicnu.cheer.leaugebar.fragment.TabFragment;
+import com.sicnu.cheer.leaugebar.fragment.ContactsFragment;
+import com.sicnu.cheer.leaugebar.fragment.EventFragment;
+import com.srx.widget.TabBarView;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import butterknife.ButterKnife;
 import butterknife.InjectView;
 
 public class MainActivity extends AppCompatActivity {
@@ -38,15 +30,14 @@ public class MainActivity extends AppCompatActivity {
     private MainActivity mThis;
     private List<MenuBean> list;
     private HomeLeftMenuAdapter adapter;
-    private HomeFragment homeFragment;
+    private EventFragment eventFragment;
+    private ContactsFragment contactsFragment;
 
     //views
     @InjectView(R.id.home_fl)
     FrameLayout frameLayout;
-    @InjectView(R.id.toolbar)
-    Toolbar toolbar;
-    @InjectView(R.id.viewPager)
-    ViewPager viewPager;
+    @InjectView(R.id.tabBarView)
+    TabBarView tabBarView;//可折叠的底部导航按钮
 
 
     private ListView listView;
@@ -58,12 +49,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         mThis = this;
         setContentView(R.layout.activity_main);
+        ButterKnife.inject(this);
         initData();
         initView();
     }
 
     private void initData() {
-        fragmentManager=getSupportFragmentManager();
+        fragmentManager = getSupportFragmentManager();
         setTabSelection(0);
     }
 
@@ -85,9 +77,15 @@ public class MainActivity extends AppCompatActivity {
 
         });
         setSlidingMenu(view);
+
+        //设置底部导航按钮
+//        tabBarView = ((TabBarView) findViewById(R.id.tabBarView));
+        setupTabView();
     }
+
     /**
      * 切换Fragment操作
+     *
      * @param tabSelection
      */
     public void setTabSelection(int tabSelection) {
@@ -96,38 +94,41 @@ public class MainActivity extends AppCompatActivity {
         hideFragments(transaction);
         switch (tabSelection) {
             case 0:
-                if (homeFragment == null) {
-                    homeFragment = new HomeFragment();
-                    transaction.add(R.id.home_fl, homeFragment);
+                if (eventFragment == null) {
+                    eventFragment = new EventFragment();
+                    transaction.add(R.id.home_fl, eventFragment);
                 } else {
-                    transaction.show(homeFragment);
+                    transaction.show(eventFragment);
                 }
                 break;
             case 1:
-//                if (teamHistory == null) {
-//                    teamHistory = new TeamHistoryFragment();
-//                    transaction.add(R.id.fragment_content, teamHistory);
-//                } else {
-//                    transaction.show(teamHistory);
-//                }
+                if (contactsFragment == null) {
+                    contactsFragment = new ContactsFragment();
+                    transaction.add(R.id.home_fl, contactsFragment);
+                } else {
+                    transaction.show(contactsFragment);
+                }
                 break;
             default:
                 break;
         }
         transaction.commit();
     }
+
     /**
      * 隐藏所有的fragments
+     *
      * @param transaction
      */
     private void hideFragments(FragmentTransaction transaction) {
-        if (homeFragment != null) {
-            transaction.hide(homeFragment);
+        if (eventFragment != null) {
+            transaction.hide(eventFragment);
         }
-//        if (teamHistory != null) {
-//            transaction.hide(teamHistory);
-//        }
+        if (contactsFragment != null) {
+            transaction.hide(contactsFragment);
+        }
     }
+
     //填充菜单ListView中的list
     private void fillListData() {
         list = new ArrayList<>();
@@ -154,7 +155,7 @@ public class MainActivity extends AppCompatActivity {
         slidingMenu.setMenu(view);
         slidingMenu.setMode(SlidingMenu.LEFT);
         slidingMenu.setTouchModeAbove(SlidingMenu.TOUCHMODE_FULLSCREEN);
-        slidingMenu.setBehindOffset(width / 3);
+        slidingMenu.setBehindOffset(width / 4);
     }
 
     public void showMenu(View view) {
@@ -162,6 +163,51 @@ public class MainActivity extends AppCompatActivity {
             slidingMenu.toggle();
         }
     }
+
+    private void setupTabView() {
+        //设置主按钮图标
+        tabBarView.setMainBitmap(R.mipmap.icon_plus);
+
+        //设置菜单对应位置按钮图标及两侧图标
+        tabBarView.bindBtnsForPage(0, R.mipmap.icon_event, 0, 0);
+        tabBarView.bindBtnsForPage(1, R.mipmap.icon_message, 0, 0);
+        tabBarView.bindBtnsForPage(2, R.mipmap.icon_manage, 0, 0);
+        tabBarView.bindBtnsForPage(3, R.mipmap.icon_contacts, 0, 0);
+
+        //设置初始默认选中
+        tabBarView.initializePage(0);
+
+        //添加监听
+        tabBarView.setOnTabBarClickListener(onTabBarClickListener);
+    }
+
+    //监听回调
+    private TabBarView.OnTabBarClickListener onTabBarClickListener = new TabBarView.OnTabBarClickListener() {
+
+        @Override
+        public void onMainBtnsClick(int position, int[] clickLocation) {
+            //点击菜单
+            setTabSelection(position);
+        }
+
+        @Override
+        public void onMainBtnsClick(int position) {
+            //点击菜单
+            setTabSelection(position);
+        }
+
+        @Override
+        public void onLeftBtnClick(int page) {
+            //点击对应菜单的左侧按钮
+        }
+
+        @Override
+        public void onRightBtnClick(int page) {
+            //点击对应菜单的右侧按钮
+        }
+
+
+    };
 
     @Override
     public void onBackPressed() {
@@ -171,4 +217,5 @@ public class MainActivity extends AppCompatActivity {
             super.onBackPressed();
         }
     }
+
 }
