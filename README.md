@@ -9,6 +9,7 @@
 ​	此软件从需求分析，到概念设计，流程图，原型设计，代码研发，测试运行皆为我一人亲力亲为，欢迎大家给我提意见，一起学习进步。
 
 #### 原型图概览
+原型图网址：https://cheerqy.github.io/leagueBar/#g=1&p=引导页
 
 ![社团吧原型图](https://github.com/CheerQY/leagueBar/blob/master/readme_restory/axure_file.gif)
 
