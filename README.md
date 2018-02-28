@@ -10,11 +10,11 @@
 
 #### 原型图概览
 
-![社团吧原型图](https://github.com/CheerQY/leagueBar/blob/master/%E5%8E%9F%E5%9E%8B%E5%9B%BE.gif)
+![社团吧原型图](https://github.com/CheerQY/leagueBar/blob/master/readme_restory/axure_file.gif)
 
 #### 最终成品
 
-![成品图](https://github.com/CheerQY/leagueBar/blob/master/%E6%88%90%E5%93%81%E5%9B%BE.gif)
+![成品图](https://github.com/CheerQY/leagueBar/blob/master/readme_restory/app.gif)
 
 #### 后台支撑
 
@@ -30,7 +30,7 @@
 
 ​	使用软件的目标用户为高校的社团管理员和普通社团成员，不同的人有不同的身份，社团管理员主要是管理自己社团的各个事物，如举办活动，发送通知。社团成员享有的权利是报名参加活动，查看活动，通知消息等。社团管理员拥有社团成员的一切操作，多出了一些对社团的管理操作，如入社管理，活动通知的发布管理等。此系统的具体用例图如下：
 
-![img](file:///C:\Users\cheer\AppData\Local\Temp\ksohtml\wps583C.tmp.png)
+![img](https://github.com/CheerQY/leagueBar/blob/master/readme_restory/user_case.jpg)
 
 #### 功能说明
 
@@ -46,7 +46,7 @@
 
 #### 系统总体设计
 
-![img](file:///C:\Users\cheer\AppData\Local\Temp\ksohtml\wps89DE.tmp.png)
+![img](https://github.com/CheerQY/leagueBar/blob/master/readme_restory/total_flow)
 
 #### 实体类设计-用户类
 
