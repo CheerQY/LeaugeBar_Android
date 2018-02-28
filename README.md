@@ -46,7 +46,7 @@
 
 #### 系统总体设计
 
-![img](https://github.com/CheerQY/leagueBar/blob/master/readme_restory/total_flow)
+![img](https://github.com/CheerQY/leagueBar/blob/master/readme_restory/total_flow.jpg)
 
 #### 实体类设计-用户类
 
